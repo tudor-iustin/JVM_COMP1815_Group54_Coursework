@@ -1,19 +1,19 @@
-<h1 align="center">Group Coursework: JVM Programming Languages (COMP-1815)</h1>
-<h3 align="center">Group 54: Iustin-Andrei Moisa-Tudor, Ansad Parayil, Davide Pascal Ningbahouot Gbaya, Amirul Islam Chowdhury, Rahat</h3>
-<h3 align="center">University of Greenwich</h3>
+# Graph Minimum Spanning Tree using Kruskal’s Algorithm
+### Implementation by Iustin-Andrei Moisa-Tudor
 
-- Iustin-Andrei Moisa-Tudor: **im3904v@gre.ac.uk**
+This Kotlin application constructs a **Minimum Spanning Tree (MST)** from data in a `Capitals.txt` file, using Kruskal’s algorithm. The program reads a list of capitals and distances between them from the file, then calculates and outputs the MST, representing the shortest set of connections required to link all capitals with minimal distance. The final distance is the total length of cable (in KM) required by the Telecoms Company.
 
-- Amirul Islam Chowdhury Rahat: **ar3572x@gre.ac.uk**
+## Requirements
 
-- Ansad Parayil: **ap1650o@gre.ac.uk**
+- **Java SDK** 11.0 or later
+- **IntelliJ IDEA** (or other Kotlin-compatible IDE)
+- **Capitals.txt** 
 
-- Davide Pascal Ningbahouot Gbaya: **dn1394m@gre.ac.uk**
+## Features
 
-<br>
-<p align="left"> <b> To access each individual group member's code, select one of the 4 branches at the top left hand side of this repository. 
-  Main Branch contains Coursework Spec Sheet, Capitals.txt Data File and Repository Information</b>
-</p>
+- **Data Representation**
+- **Graph Class** MST using Kruskal's Algorithm
+- **Command Line Interface (CLI)**
 
-<h3 align="left">Languages and Tools used for this project:</h3>
+## Languages and Tools used for this project: ##
 <p align="left"> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://kotlinlang.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kotlinlang/kotlinlang-icon.svg" alt="kotlin" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> </p>
