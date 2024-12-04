@@ -7,20 +7,20 @@ data class Edge(val city1: City, val city2: City, val distance: Int)
 
 // Graph class
 class Graph {
-    private val cities = mutableSetOf<City>()
+    private val Cities = mutableSetOf<City>()
     private val edges = mutableListOf<Edge>()
 
     fun addCity(city: City) {
-        cities.add(city)
+        Cities.add(city)
     }
 
     fun addEdge(edge: Edge) {
         edges.add(edge)
-        cities.add(edge.city1)
-        cities.add(edge.city2)
+        Cities.add(edge.city1)
+        Cities.add(edge.city2)
     }
 
-    fun getCities(): Set<City> = cities
+    fun getCities(): Set<City> = Cities
     fun getEdges(): List<Edge> = edges
 }
 
@@ -44,12 +44,12 @@ fun loadFile(graph: Graph, filePath: String) {
 // MST calculation
 fun calculateMST(graph: Graph): List<Edge> {
     val mst = mutableListOf<Edge>() // List to store the MST edges
-    val visitedCities = mutableSetOf<City>() // Set of cities already included in the MST
+    val visitedCities = mutableSetOf<City>() // Set of Cities already included in the MST
     val edgeList = mutableListOf<Edge>() // List to store edges for manual selection
 
     // Start from an arbitrary city (e.g., the first city in the graph)
     val startCity = graph.getCities().firstOrNull()
-        ?: return mst // Return empty MST if no cities in the graph
+        ?: return mst // Return empty MST if no Cities in the graph
 
     visitedCities.add(startCity)
 
@@ -100,7 +100,7 @@ fun main() {
 
         when (readLine()?.toIntOrNull()) {
             1 -> {
-                print("Enter file path: ")
+                print("Enter file path(choose from 1/2/3/4): ")
                 val filePath = readLine()!!
                 try {
                     loadFile(graph, filePath)
